@@ -1,0 +1,127 @@
+
+main{
+    padding: 0px 25px;
+    text-align: justify;
+}
+
+main h2{
+    font-size: var(--fontSubTitle);
+    line-height: var(--lineSubTitle);
+    font-weight: 400;
+    margin-bottom: .25rem;
+}
+
+main p{
+    font-size: var(--fontText);
+    line-height: var(--lineText);
+}
+
+.quemSomos{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+.quemSomos__texto{
+    width: 50%;
+}
+.quemSomos__img{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ------------------------------- */
+
+.encontrosProjeto{
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+.encontrosProjeto__encontros{
+width: 50%;
+}
+
+.encontrosProjeto__projeto{
+width: 50%;
+}
+.encontrosProjeto__projeto > p{
+    margin-bottom: 1rem;
+}
+.encontrosProjeto__projeto > p > span{
+    color: var(--accent);
+}
+
+.encontrosProjeto__projeto > div{
+    text-align: center;
+    padding: 1rem 2rem;
+    width: 50%;
+    margin: auto;
+
+    border: 3px solid var(--accent);
+    border-radius: 10px;
+
+}
+
+.encontrosProjeto__projeto > div > a{
+    color: var(--whitePiano);
+    text-decoration: none;
+}
+/* -------------------------------------------- */
+
+.contato__container{
+    height: 40vh;
+}
+.contato h2{
+    text-align: center;
+    padding: 2rem;
+}
+
+
+.contato__container{
+    display: flex;
+    justify-content: space-between;
+    border: 3px solid var(--accent);
+    padding: 25px;
+    width: 60%;
+    margin: auto;
+}
+
+.contato__container form{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    gap: 5px;
+}
+.contato__container form input{
+    text-align: center;
+
+}
+
+.contato__container form > *{
+    border: 2px solid var(--whitePiano);
+    background: none;
+    color: var(--whitePiano);
+}
+.contato__container div{
+    display: flex;
+    align-items:  center;
+    justify-content: center;
+    flex-direction: column;
+    width: 45%;
+    text-align: left;
+}
+
+form #mensage{
+    height: 50%;
+    text-align: left;
+    resize: none;
+
+}
+
+form #name,#mail,button{
+    height: 16%;
+}

@@ -1,0 +1,47 @@
+/* Import */
+@import url(reset.css);
+@import url(landing/header.css);
+@import url(landing/main.css);
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/* 
+font-family: 'Playfair Display', serif;
+font-family: 'Roboto', sans-serif;
+*/
+
+/* ----------------------------------------------------- */
+:root{
+    --blackPiano:#141316;
+    --black:#131313;
+    --whitePiano:#F5F2E7;
+    --white:#fdfdfd;
+    --accent:#C44D58;
+
+    --fontTitle: 3rem;
+    --fontSubTitle: 2.5rem;
+    --fontText: 1.125rem;
+
+    --lineTitle:2.5rem;
+    --lineSubTitle:3rem;
+    --lineText:1.75rem;
+}
+/* --------------------------------------- */
+
+
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Playfair Display', serif;
+}
+p,span{
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: var(--blackPiano);
+    color: var(--whitePiano);
+}
+
+main{
+    margin: 50px;
+}
