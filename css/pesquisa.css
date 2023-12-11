@@ -64,3 +64,77 @@
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
 }
+
+/* DOCUMENTOS */
+
+.documentos{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.documentos__buttons{
+    display: flex;
+    gap: 20px;
+    padding: 4rem;
+}
+
+.documentos__buttons button{
+    background: none;
+    outline: none;
+    border: none;
+
+    color: var(--whitePiano);
+
+    font-family: Roboto;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 2rem;
+}
+
+#documentosBNT-active{
+    color: var(--accent);
+}
+
+
+.documentos__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.documento{
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    height: 90px;
+    gap: 30px;
+    align-items: center;
+    text-align: center;
+}
+.documento p{
+    width: 40%;
+}
+.documento__span{
+    width: 20%;
+}
+
+.documento > a{
+    width: 20%;
+    text-decoration: none;
+    color: var(--accent);
+}
+
+
+
+.hline-pesquisa{
+    background-color: var(--accent);
+    width: 80%;
+    height: 2px;
+    margin: 2rem;
+}
+/* ---------- */
