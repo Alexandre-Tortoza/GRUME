@@ -1,0 +1,46 @@
+#landing{
+    max-width: 1440px;
+    color: var(--whitePiano);
+    margin: auto;
+    
+}
+.quemSomos, .encontrosEProjeto{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: justify;
+    gap: 50px;
+}
+.quemSomos{
+    align-items: center;
+}
+.quemSomos > *,.encontrosEProjeto > *{
+    width: 45%;
+}
+.quemSomos h2,.encontrosEProjeto h2{
+    font-family: 'Playfair Display', serif;
+    font-size: var(--fontSubTitle);
+    line-height: var(--lineSubTitle);
+}
+.quemSomos p,.encontrosEProjeto p{
+    font-family: var(--fontFamilyContent);
+    font-size: var(--fontText);
+    line-height: var(--lineText);
+}
+
+#projetoDownload{
+    color: var(--whitePiano);
+    font-family: var(--fontFamilyContent);
+    text-decoration: none;
+    text-transform: uppercase;
+
+    display: flex;
+    justify-content: center;
+
+    padding: 1rem 0;
+    width: 80%;
+    margin: auto;
+
+    border-radius: 15px;
+    border: 2px solid var(--accent);
+}

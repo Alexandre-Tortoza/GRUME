@@ -1,0 +1,66 @@
+#pesquisa{
+    max-width: 1440px;
+    color: var(--whitePiano);
+    margin: auto;
+    padding: 2rem;
+}
+
+.equipe h2{
+    font-family: var(--fontFamilyTitle);
+    font-size: var(--fontSubTitle);
+    font-weight: 400;
+
+}
+.equipe__doutorandos{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.doutorando{
+    border: 1px solid var(--accent);
+    width: 45%;
+    padding: 1rem;
+
+    display: flex;
+    gap: 20px   ;
+}
+
+.doutorando h3{
+    text-align: justify;
+    font-family: var(--fontFamilyTitle);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.doutorando p{
+    color: var(--whitePiano);
+    font-family: var(--fontFamilycontent);
+    font-size: 1.125rem;
+    font-weight: 400;
+    text-align: justify;
+}
+
+.doutorando__img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+
+}
+.doutorado__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.doutorado__icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.doutorado__icons a {
+    display: flex;
+    align-items: center;
+    color: var(--whitePiano);
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
