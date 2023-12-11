@@ -138,3 +138,73 @@
     margin: 2rem;
 }
 /* ---------- */
+
+
+@media only screen and (max-width: 768px) {
+
+
+    main#pesquisa{
+        width: 100%;
+        padding:0;
+    }
+
+    main#pesquisa *{
+        text-align: center;
+
+    }
+    .equipe__doutorandos{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+    .doutorando{
+        flex-direction: column;
+        width: 80%;
+    }
+    .equipe h2{
+        width: 80%;
+        margin: auto;
+    }
+    .doutorado__content{
+        gap: 10px;
+    }
+
+    .documentos__buttons{
+        /* flex-direction: column; */
+        /* padding: 0;
+        font-size: 1rem; */
+        display: none;
+    }
+    .documento{
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+    }
+
+    .documento__span{
+        width: 100%;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

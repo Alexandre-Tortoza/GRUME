@@ -91,3 +91,33 @@ header > a h1 span{
     color: var(--accent);
 }
 /* ----- */
+
+
+@media only screen and (max-width: 768px) {
+    main#landing p,h2 {
+        text-align: center;
+    }
+
+    header nav{
+        display: none;
+    }
+
+    .quemSomos{
+        flex-direction: column;
+    }
+
+    .quemSomos > *, .encontrosEProjeto > *{
+        width: 90%;
+    }
+
+    .quemSomos img{
+        width: 80%;
+        height: 80%;
+    }
+    header{
+    justify-content: center;
+    }
+    header a span{
+        display: none;
+    }
+}
