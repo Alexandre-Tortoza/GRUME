@@ -6,22 +6,27 @@
     <title>artistico - GRUME</title>
     <!-- Imports -->
     <link rel="stylesheet" href="../css/style.css">
-
+    <script src="../js/index.js"></script>
     <!-- ------- -->
 </head>
 <body>
+    <div id="navMobile"></div>
     <header>
         <a href="../index.html">
             <h1>GRUME <span>- UFPR</span></h1>
         </a>
-        <nav>
-            <a href="../pages/daniloRamos.html">Professor Danilo Ramos</a>
-            <a href="../pages/pesquisa.html">Pesquisa</a>
-            <a href="../pages/artistico.html" id="nav-active">Artístico </a>
-            <a href="../pages/ensinoDeMusica.html">Ensino de música </a>
-            <a href="../pages/infraestrutura.html">Infraestrutura </a>
+        <nav id="navDesk">
+            <a href="./daniloRamos.html">Professor Danilo Ramos</a>
+            <a href="./pesquisaIntro.html">Pesquisa</a>
+            <a href="./artistico.html">Artístico </a>
+            <a href="./ensinoDeMusicaIntro.html">Ensino de música </a>
+            <a href="./infraestrutura.html">Infraestrutura </a>
         </nav>
+        <div id="menuMobile">
+            <img onclick="openMenuMobile(1)" src="../imagens/icons/menu.svg" alt="Menu Nav">
+        </div>
     </header>
+    <br>
 
 
     <main id="artistico">

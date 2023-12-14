@@ -45,3 +45,39 @@ function validarFormulario(nome, email, mensagem) {
 }
 
 
+function closeMenuMobile(){
+    document.getElementById("navMobile").innerHTML = ""
+}
+function openMenuMobile(local){
+    var mobileMenu =`
+    <nav>
+        <img onclick="closeMenuMobile()" src="imagens/icons/close.svg" alt="Close button">
+        <br>
+        <div>
+            <a href="pages/daniloRamos.html">Professor Danilo Ramos</a>
+            <a href="pages/pesquisaIntro.html">Pesquisa</a>
+            <a href="pages/artistico.html">Artístico </a>
+            <a href="pages/ensinoDeMusicaIntro.html">Ensino de música </a>
+            <a href="pages/infraestrutura.html">Infraestrutura </a>    
+        </div>
+    </nav>        
+    `
+    var mobileMenu_pages =`
+    <nav>
+        <img onclick="closeMenuMobile()" src="../imagens/icons/close.svg" alt="Close button">
+        <br>
+        <div>
+            <a href="daniloRamos.html">Professor Danilo Ramos</a>
+            <a href="pesquisaIntro.html">Pesquisa</a>
+            <a href="artistico.html">Artístico </a>
+            <a href="ensinoDeMusicaIntro.html">Ensino de música </a>
+            <a href="infraestrutura.html">Infraestrutura </a>    
+        </div>
+    </nav>        
+    `
+    if(local === 0){
+        document.getElementById("navMobile").innerHTML = mobileMenu
+    }else{
+        document.getElementById("navMobile").innerHTML = mobileMenu_pages
+    }
+}
