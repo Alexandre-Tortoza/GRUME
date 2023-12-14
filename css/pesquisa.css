@@ -116,24 +116,28 @@
     align-items: center;
     text-align: center;
 }
+.categoria{
+    text-transform: uppercase;
+}
+
 .documento p{
     width: 60%;
 }
-.documento__span{
-    width: 20%;
-}
 
 .documento > a{
-    width: 20%;
+    width: 10%;
     text-decoration: none;
     color: var(--accent);
+}
+.documento__span{
+    width: 10%;
 }
 
 
 
 .hline-pesquisa{
     background-color: var(--accent);
-    width: 80%;
+    width: 90%;
     height: 2px;
     margin: 2rem;
 }

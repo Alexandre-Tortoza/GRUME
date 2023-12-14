@@ -22,7 +22,7 @@ window.onload = async function(){
     for (var i=0; i < orientacoes.length; i++){
             var card = `
         <div class="documento">
-        <span class="documento__span">${orientacoes[i].categoria}</span>
+        <span class="documento__span categoria">${orientacoes[i].categoria}</span>
         <span class="documento__span">${orientacoes[i].autor}<br>${orientacoes[i].ano}</span>
         <p>${orientacoes[i].descricao}</p>
         <a href="">Link</a>
@@ -49,7 +49,7 @@ function changeOrientacoes(){
     for (var i=0; i < orientacoes.length; i++){
         var card = `
     <div class="documento">
-    <span class="documento__span">${orientacoes[i].categoria}</span>
+    <span class="documento__span categoria">${orientacoes[i].categoria}</span>
     <span class="documento__span">${orientacoes[i].autor}<br>${orientacoes[i].ano}</span>
     <p>${orientacoes[i].descricao}</p>
     <a href="${orientacoes[i].download}">Link</a>
@@ -75,7 +75,7 @@ function changePublicacoes(){
     for (var i=0; i < publicacoes.length; i++){
         var card = `
     <div class="documento">
-    <span class="documento__span">${publicacoes[i].categoria}</span>
+    <span class="documento__span categoria">${publicacoes[i].categoria}</span>
     <span class="documento__span">${publicacoes[i].autor}<br>${publicacoes[i].ano}</span>
     <p>${publicacoes[i].descricao}</p>
     <a href="${publicacoes[i].download}">Link</a>
