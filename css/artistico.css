@@ -1,0 +1,34 @@
+
+main#artistico{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.destaque{
+    width: 60%;
+}
+
+.performaceDestaque{
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+}
+
+.responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.destaque h2{
+    font-family: 'Playfair Display', serif;
+    font-size: var(--fontSubTitle);
+    line-height: var(--lineSubTitle);
+    text-align: center;
+    margin: .5rem;
+}

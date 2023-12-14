@@ -44,3 +44,57 @@
     border-radius: 15px;
     border: 2px solid var(--accent);
 }
+/* Contato */
+
+.contato{
+    margin: 2rem 0;
+    justify-content: center;
+    display: flex;
+}
+
+.contato__container{
+    border: 1px solid var(--accent);
+    width: 60%;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+}
+.contato form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 5px;
+}
+
+.contato form textarea{
+    resize: none;
+}
+
+.contato__container div{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contato__container form input ,.contato__container form textarea, .contato__container form button{
+    background: none;   
+    padding: 1rem;
+    color: var(--whitePiano);
+    border: 1px solid var(--whitePiano);
+}
+
+@media only screen and (max-width: 768px){
+    .contato__container{
+        flex-direction: column;
+    }
+    #contatoForm{
+        width: 100%;
+    }
+    .contato__container > div{
+        text-align: center;
+        width: 100%;
+    }
+}

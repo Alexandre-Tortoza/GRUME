@@ -6,7 +6,7 @@
     <title>GRUME – Grupo de Pesquisa Música e Expertise</title>
     <!-- Imports -->
     <link rel="stylesheet" href="css/style.css">
-
+    <script src="js/index.js"></script>
     <!-- ------- -->
 </head>
 <body>
@@ -44,9 +44,21 @@
                 <a href="#" id="projetoDownload" >Leia nosso projeto</a>
             </div>
         </div>
-
+        <br>
         <div class="contato">
-
+            <div class="contato__container">
+                <form id="contatoForm">
+                    <input type="text" placeholder="Nome" name="name" id="contatoName">
+                    <input type="text" placeholder="Email" name="email" id="contatoMail">
+                    <textarea name="mensage" rows="5" placeholder="Escreva uma mensagem para o Professor" name="mensage" id="contatoMensage" ></textarea>
+                    <button type="button" onclick="sendEmail()" id="contatoButton">Enviar</button>
+                </form>
+                <div>
+                    <h3>Contate tambem nossos estudantes-membros</h3>
+                    <br>
+                    <p>Os e-mails de todos eles podem ser encontrados na seção de pesquisa Eles são motivados a lhe contar sobre suas respectivas pesquisas.</p>
+                </div>
+            </div>
         </div>
     </main>
 

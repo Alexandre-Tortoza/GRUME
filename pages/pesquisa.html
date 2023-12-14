@@ -6,7 +6,7 @@
     <title>Pesquisa - GRUME</title>
     <!-- Imports -->
     <link rel="stylesheet" href="../css/style.css">
-
+    <script defer src="../js/pesquisa.js"></script>
     <!-- ------- -->
 </head>
 <body>
@@ -215,35 +215,17 @@
         <br>
         <div class="documentos">
             <div class="documentos__buttons">
-                <button id="documentosBNT-active">ORIENTAÇÕES CONCLUÍDAS</button>
-                <button>PUBLICAÇÕES</button>
-                <button>ORIENTAÇÕES CONCLUÍDAS</button>
+                <button id="bnt__orientacoes" onclick="changeOrientacoes()">ORIENTAÇÕES CONCLUÍDAS</button>
+                <button id="bnt__publicacoes" onclick="changePublicacoes()">PUBLICAÇÕES</button>
+                <button id="bnt__documentos" onclick="changeDocumentos()">DOCUMENTOS ÚTEIS</button>
             </div>
+            
             <br>
-            <div class="documentos__container">
-                <div class="documento">
-                    <span class="documento__span">TESE DE DOUTORADO</span>
-                    <span class="documento__span">Silva, E. G. <br> 2021</span>
-                    <p>Preferência e emoção em ambientes de escuta musical mediados pela tecnologia. Tese de doutorado. Universidade Federal do Paraná, PR, Brasil.</p>
-                    <a href="">LINK</a>
-                </div>
-                <div class="hline-pesquisa"></div>
-                <div class="documento">
-                    <span class="documento__span">TCC</span>
-                    <span class="documento__span">Alves, A. A. <br> 2023</span>
-                    <p>Correlações entre a prática instrumental e o desempenho de estudantes em disciplinas de estruturação musical em um curso de graduação em música. Trabalho de Conclusão de Curso (Bacharelado em Música). Universidade Federal do Paraná, Curitiba, PR, Brasil.</p>
-                    <a href="">LINK</a>
-                </div>
-                <div class="hline-pesquisa"></div>
-                <div class="documento">
-                    <span class="documento__span">TESE DE DOUTORADO</span>
-                    <span class="documento__span">Mello, E. K. S. <br> 2021</span>
-                    <p>A influência da familiaridade musical sobre a formação de expectativas melódicas: um estudo transcultural. Tese de doutorado. Universidade Federal do Paraná, PR, Brasil.</p>
-                    <a href="">LINK</a>
-                </div>
-                <div class="hline-pesquisa"></div>
-            </div>
 
+            <div class="documentos__container" id="pesquisa__cards"></div>
+            <div class="documentos__container-card" id="pesquisa__cards-card"></div>
+
+            </div>
 
 
 

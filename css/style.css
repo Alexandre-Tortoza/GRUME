@@ -2,6 +2,7 @@
 @import url(reset.css);
 @import url(index.css);
 @import url(pesquisa.css);
+@import url(artistico.css);
 
 
 /* Fonts */
@@ -33,6 +34,15 @@ font-family: 'Roboto', sans-serif;
 /* --------------------------------------- */
 body{
     background-color: var(--blackPiano);
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body{
+    
 }
 p,h2,h3{
     font-family: 'Roboto', sans-serif;
