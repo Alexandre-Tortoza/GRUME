@@ -6,7 +6,7 @@
     <title>GRUME – Grupo de Pesquisa Música e Expertise</title>
     <!-- Imports -->
     <link rel="stylesheet" href="../css/style.css">
-    <script src="../js/index.js"></script>
+    <script src="../js/pesquisa.js"></script>
     <!-- ------- -->
 </head>
 <body>
@@ -17,7 +17,7 @@
         </a>
         <nav id="navDesk">
             <a href="./daniloRamos.html">Professor Danilo Ramos</a>
-            <a href="./pesquisaIntro.html">Pesquisa</a>
+            <a id="nav-active" href="./pesquisaIntro.html">Pesquisa</a>
             <a href="./artistico.html">Artístico </a>
             <a href="./ensinoDeMusicaIntro.html">Ensino de música </a>
             <a href="./infraestrutura.html">Infraestrutura </a>
@@ -27,5 +27,24 @@
         </div>
     </header>
     <br>
+    <main id="pesquisa">
+        <br>
+        <div class="pesquisa">
+            <div class="pesquisa__buttons">
+                <button id="bnt__equipe" onclick="changePesquisa(0)">EQUIPE</button>
+                <button id="bnt__orientacoes" onclick="changePesquisa(1)">ORIENTAÇÕES CONCLUÍDAS</button>
+                <button id="bnt__publicacoes" onclick="changePesquisa(2)">PUBLICAÇÕES</button>
+                <button id="bnt__documentos" onclick="changePesquisa(3)">DOCUMENTOS ÚTEIS</button>
+                
+            </div>
+            <br>
+            <div id="pesquisa__container">
+
+
+
+            </div>
+    </div>
+        
+    </main>
 </body>
 </html>

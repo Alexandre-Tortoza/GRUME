@@ -32,3 +32,15 @@ main#artistico{
     text-align: center;
     margin: .5rem;
 }
+
+
+.videosArtistico {
+    gap: 5px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.videosArtistico > img{
+    width: 18%;
+
+}

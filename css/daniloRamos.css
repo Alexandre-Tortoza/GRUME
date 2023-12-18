@@ -37,7 +37,7 @@ main#daniloRamos{
     text-align: left;
 }
 .tese a{
-    color: var(--accent);
+    color: var(--whitePiano);
     text-decoration: none;
     padding: 1rem 2rem;
     border: 1px solid var(--accent);

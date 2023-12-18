@@ -1,9 +1,11 @@
 /* Import */
 @import url(reset.css);
 @import url(index.css);
+@import url(daniloRamos.css);
 @import url(pesquisa.css);
 @import url(artistico.css);
-@import url(daniloRamos.css);
+@import url(ensinoDeMusica.css);
+@import url(infraestrutura.css);
 
 
 /* Fonts */
@@ -29,7 +31,7 @@ font-family: 'Playfair Display', serif;
     
     --lineTitle: 2.5rem;
     --lineSubTitle: 3rem;
-    --lineText: 1.225rem;
+    --lineText: 1.25rem;
 
     --fontFamilyTitle: 'Playfair Display', serif;
     --fontFamilyContent:  'EB Garamond', serif;
@@ -44,12 +46,11 @@ body::-webkit-scrollbar {
     display: none;
 }
 
-body{
-    
-}
+
 p,h3{
     font-family:var(--fontFamilyContent);
     color: var(--whitePiano);
+    line-height: var(--lineText);
 }
 h2{
     color: var(--whitePiano);
