@@ -1,0 +1,10 @@
+@keyframes slideIn {
+    from  { right: -400px; }
+    to { right: 0; }
+}
+
+@media only screen and (max-width: 768px) {
+    .menuAnimation {
+        animation: slideIn 0.3s ease-out
+    }
+}

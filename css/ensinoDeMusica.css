@@ -1,0 +1,11 @@
+@media only screen and (max-width: 768px) {
+    #ensinoDeMusica{
+        margin-top: 5rem;
+    }
+    .ensinoDeMusica__container{
+        flex-direction: column;
+    }
+
+
+
+}

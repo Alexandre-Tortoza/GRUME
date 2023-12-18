@@ -19,38 +19,75 @@ function sendEmail(){
 }
 
 function validarFormulario(nome, email, mensagem) {
-    // Verificar se o campo Nome é definido e tem mais que 3 letras
+    limparFeedbacksErro();
+
     if (!nome || nome.trim().length < 3) {
-        console.log("Nome deve ser fornecido e ter mais que 3 letras.");
+        exibirErro('contatoName', 'Nome completo.');
         return false;
     }
 
-    // Verificar se o campo Email é definido e é um email válido
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!email || !emailRegex.test(email)) {
-        console.log("Email inválido.");
+        exibirErro('contatoMail', 'Email inválido.');
         return false;
     }
 
-    // Verificar se o campo Mensagem é definido e tem mais que 10 palavras
     const palavrasMensagem = mensagem ? mensagem.trim().split(/\s+/) : [];
     if (!mensagem || palavrasMensagem.length < 5) {
-        console.log("A mensagem deve ser fornecida deve ser maior.");
+        exibirErro('contatoMensage', 'A mensagem deve ser maior.');
         return false;
     }
 
-    // Se todas as verificações passarem, o formulário é válido
     console.log("Formulário válido!");
+
+    document.getElementById('contatoButton').classList.add('mailsuccess');
+    document.getElementById('contatoButton').innerHTML = "ENVIADO";
+
     return true;
 }
 
+function exibirErro(elementoId, mensagem) {
+    document.getElementById(elementoId).classList.add('mailError');
+    var feedbackExistente = document.getElementById(`${elementoId}-errorFeedback`);
+    
+    if (!feedbackExistente) {
+
+        var formulario = document.getElementById("contatoForm");
+        var divsParaRemover = formulario.querySelectorAll('div');
+        divsParaRemover.forEach(function(div) {
+            formulario.removeChild(div);
+        });
+
+
+
+
+        var novoElemento = document.createElement('div');
+        novoElemento.innerHTML = `<span id='${elementoId}-errorFeedback'>${mensagem}</span>`;
+        var elementoAlvo = document.getElementById(elementoId);
+        elementoAlvo.parentNode.insertBefore(novoElemento, elementoAlvo);
+    }
+}
+
+function limparFeedbacksErro() {
+    document.getElementById('contatoName').classList.remove('mailError');
+    document.getElementById('contatoMail').classList.remove('mailError');
+    document.getElementById('contatoMensage').classList.remove('mailError');
+
+    var feedbacks = document.querySelectorAll('[id$="-errorFeedback"]');
+    feedbacks.forEach(function (feedback) {
+        feedback.parentNode.removeChild(feedback);
+    });
+}
 
 function closeMenuMobile(){
     document.getElementById("navMobile").innerHTML = ""
+    if (document.getElementById('navMobile').classList.contains('menuAnimation')) {
+        document.getElementById('navMobile').classList.remove('menuAnimation');
+    }
 }
 function openMenuMobile(local){
     var mobileMenu =`
-    <nav>
+    <nav id='NavMenuAnimation'>
         <img onclick="closeMenuMobile()" src="imagens/icons/close.svg" alt="Close button">
         <br>
         <div>
@@ -63,7 +100,7 @@ function openMenuMobile(local){
     </nav>        
     `
     var mobileMenu_pages =`
-    <nav>
+    <nav id='NavMenuAnimation'>
         <img onclick="closeMenuMobile()" src="../imagens/icons/close.svg" alt="Close button">
         <br>
         <div>
@@ -77,7 +114,9 @@ function openMenuMobile(local){
     `
     if(local === 0){
         document.getElementById("navMobile").innerHTML = mobileMenu
+        document.getElementById('navMobile').classList.add('menuAnimation');
     }else{
         document.getElementById("navMobile").innerHTML = mobileMenu_pages
+        document.getElementById('navMobile').classList.add('menuAnimation');
     }
 }

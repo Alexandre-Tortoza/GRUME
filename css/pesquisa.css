@@ -36,6 +36,24 @@
     border: 1px solid var(--accent);
 }
 
+
+@media only screen and (max-width: 768px) {
+    #pesquisaIntro{
+        margin-top: 5rem;
+    }
+    .pesquisa__destaque{
+        flex-direction: column-reverse;
+    }
+
+
+
+}
+
+
+
+
+
+
 /* ----------------------------------------- */
 /* -------------- Pesquisa ----------------- */
 .pesquisa{

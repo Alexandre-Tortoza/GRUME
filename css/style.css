@@ -6,6 +6,7 @@
 @import url(artistico.css);
 @import url(ensinoDeMusica.css);
 @import url(infraestrutura.css);
+@import url(aniamtion.css);
 
 
 /* Fonts */
@@ -180,6 +181,7 @@ header > a h1 span{
         height: 100%;
         z-index: 2;
     }
+    
     #navMobile nav{
         display: flex;
         flex-direction: column;

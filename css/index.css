@@ -98,3 +98,28 @@
         width: 100%;
     }
 }
+
+
+
+.mailError{
+    border: 1px solid var(--accent) !important;
+}
+.mailsuccess{
+    border: 1px solid #acf3a0 !important;
+    color: #acf3a0 !important; 
+}
+
+#errorFeedback{
+    color: var(--accent);
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+#contatoMensage-errorFeedback, #contatoName-errorFeedback, #contatoMail-errorFeedback{
+    color: var(--accent);
+}
+
+#contatoForm > div{
+    width: 100% !important;
+}
