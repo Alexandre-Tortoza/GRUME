@@ -1,0 +1,271 @@
+/* ------------- Pesquisa Intro --------------- */
+#pesquisaIntro{
+    margin: auto;
+    width: 80%;
+    height: 80vh;
+    text-align: justify;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#pesquisaIntro h2{
+    text-align: left;
+    width: 100%;
+}
+.pesquisa__destaque{
+    display: flex;
+    gap: 30px;
+}
+
+.pesquisa__destaque-conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.pesquisa__destaque-conteudo a{
+    display: flex;
+    justify-content: center;
+    color: var(--whitePiano);
+    padding: 1rem 2rem;
+    margin: 1rem;
+    text-decoration: none;
+    font-family: var(--fontFamilyTitle);
+    border: 1px solid var(--accent);
+}
+
+
+@media only screen and (max-width: 768px) {
+    #pesquisaIntro{
+        padding: 5rem 0 0;
+        width: 90%;
+        margin: auto;
+    }
+    #pesquisaIntro img{
+        display: none;
+    }
+
+    .pesquisa__destaque{
+        flex-direction: column-reverse;
+    }
+
+
+
+}
+
+
+
+
+
+
+/* ----------------------------------------- */
+/* -------------- Pesquisa ----------------- */
+.pesquisa{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.pesquisa__buttons{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: auto;
+}
+
+.pesquisa__buttons button{
+    color: var(--whitePiano);
+    background: none;
+    outline: none;
+    padding: 1rem 2rem;
+    border: 1px solid var(--accent);
+    width: 100%;
+}
+/* ------------------------ */
+
+.membros{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+}
+.membro{
+    border: 1px solid var(--accent);
+    display: flex;
+    width: 45%;
+    height:100%;
+
+    text-align: justify;
+    gap: 10px;
+    padding: 1rem;
+    color: var(--whitePiano);
+}
+.membro >div> img.membro__img{
+    width: 180px;
+    height: 180px;
+}
+.membro > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.membro > div h2{
+    text-align: left;
+}
+.membro__links{
+    display: flex;
+    gap: 20px;
+}
+.membro__links a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    color: var(--whitePiano);
+    text-decoration: none;
+    font-family: var(--fontFamilyTitle);
+}
+
+@media only screen and (max-width: 768px){
+    main#pesquisa{
+        margin-top: 5rem;
+    }
+
+
+
+
+    .pesquisa__buttons{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        margin: auto;
+        margin-bottom: 1rem;
+    }
+    .pesquisa__buttons button{
+        width: 40%;
+        padding: 1rem 0rem;
+    }
+
+
+
+
+    .pesquisa__container{
+        width: 90%;
+        margin: auto;
+    }
+    .membro{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+
+}
+
+
+/* -------------------------- */
+.orientacoes{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.orientacao{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+    font-family: var(--fontFamilyContent);
+    border-bottom: 1px solid var(--accent);
+}
+.orientacao > *{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+
+}
+.orientacao > p{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+
+}
+
+.orientacao__categoria{
+    text-transform: uppercase;
+    text-align: center;
+}
+.orientacao__nomeEAno{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: var(--whitePiano);
+}
+
+.orientacao__link{
+    color: var(--accent);
+    text-decoration: none;
+}
+@media only screen and (max-width: 768px){
+    .orientacao{
+        flex-direction: column;
+        align-items: center;
+    }
+    .orientacao > * {
+        width: 100%;
+    }
+
+
+
+}
+/* ------------------------------------ */
+.documentos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.documento{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 15%;
+    height: 7rem;
+    padding: 1rem .5rem;
+    border: 1px solid var(--accent);
+    text-align: center;
+}
+
+.documento a {
+    color: var(--accent);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+@media only screen and (max-width: 768px){
+
+    .documentos{
+        display: flex;
+        flex-direction: column;
+  
+    }
+    .documento{
+
+        width: 80%;
+    }
+
+
+
+}
+
+

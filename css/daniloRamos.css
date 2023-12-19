@@ -1,0 +1,114 @@
+
+
+
+main#daniloRamos{
+    margin: 2rem 0rem;
+    text-align: justify;
+}
+
+.main__danilo{
+    margin: auto;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.main__danilo > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+.main__danilo > div > img{
+    width: 40%;
+}
+.main__danilo > div > div{
+    width: 60%;
+}
+
+.tese{
+    flex-direction: column;
+    gap: 0px !important;
+}
+.tese h2{
+    width: 100%;
+    text-align: left;
+}
+.tese a{
+    color: var(--whitePiano);
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border: 1px solid var(--accent);
+    margin: 1rem;
+}
+.destaque-danilo{
+    width: 45%;
+    margin: auto;
+}
+
+.performaceDestaque-danilo{
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+}
+
+.responsiveIframe-danilo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+
+.fotos{
+    width: 70%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+.fotos > *{
+    width: 12%;
+}
+
+
+@media only screen and (max-width: 768px){
+    
+    main#daniloRamos{
+        margin: 5rem 0rem;
+        text-align: justify;
+    }
+    main#daniloRamos h2{
+        text-align: left;
+    }
+    .main__danilo{
+        width: 90%;
+    }
+    .main__danilo > div{
+        flex-direction: column;
+        width: 100%;
+    }
+    .main__danilo > div > img{
+        width: 80%;
+    }
+    .main__danilo > div > div{
+        width: 100%;
+    }
+    .destaque-danilo{
+        width: 90%;
+        margin: auto;
+    }
+    .fotos > *{
+        width: 40%;
+    }
+    .fotos{
+        width: 90%;
+    }
+}

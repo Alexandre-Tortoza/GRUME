@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRUME – Grupo de Pesquisa Música e Expertise</title>
+    <!-- Imports -->
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/index.js"></script>
+    <script src="../js/ensinoDeMusica.js"></script>
+    <!-- ------- -->
+</head>
+<body>
+    <div id="navMobile"></div>
+    <header >
+        <a href="../index.html">
+            <h1>GRUME <span>- UFPR</span></h1>
+        </a>
+        <nav id="navDesk">
+            <a href="./daniloRamos.html">Professor Danilo Ramos</a>
+            <a href="./pesquisaIntro.html">Pesquisa</a>
+            <a href="./artistico.html">Artístico </a>
+            <a id="nav-active" href="./ensinoDeMusicaIntro.html">Ensino de música </a>
+            <a href="./infraestrutura.html">Infraestrutura </a>
+        </nav>
+        <div id="menuMobile">
+            <img onclick="openMenuMobile(1)" src="../imagens/icons/menu.svg" alt="Menu Nav">
+        </div>
+    </header>
+    <br>
+
+    <main id="ensinoMu">
+        <div class="ensino">
+            <div class="ensino__buttons">
+                <button id="bnt__disciplina" onclick="changeEnsino(0)">Disciplina</button>
+                <button id="bnt__videos" onclick="changeEnsino(1)">videos</button>
+                <button id="bnt__curiosidades" onclick="changeEnsino(2)">curiosidades</button>                
+            </div>
+            <br>
+            <div id="ensino__container"></div>
+        </div>
+    </main>
+
+
+</body>
+</html>
