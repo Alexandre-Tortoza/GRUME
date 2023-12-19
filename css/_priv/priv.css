@@ -1,0 +1,74 @@
+body{
+    background-color: #141315;
+    color:  white;
+    width: 99vw;
+    height: 97vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body > div#login{
+    border: 1px solid  white;
+    padding: 1rem 2rem;
+    text-align: center;
+}
+
+
+/* ------------------------------------ */
+
+h1{
+    text-transform: uppercase;
+}
+.adminMenu{
+    background-color: #2c2c2c;
+    width: 20%;
+    height: 100%;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.adminMenu button{
+    padding: 2rem 3rem;
+    width: 90%;
+    background-color: #1e1e1e;
+    color: white;
+    border: none;
+    outline: none;
+    border: 1px solid #1c1c1c;
+    border-radius: 5px;
+}
+.adminContainer{
+    background-color: white;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#container{
+    display: flex;
+    flex-direction: column;
+    color: black;
+}
+/* ------------------------- */
+form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: column;
+    width: 50%;
+}
+
+textarea{
+    resize: none;
+}
+a{
+    text-decoration: none;
+    color: #C44D58;
+}

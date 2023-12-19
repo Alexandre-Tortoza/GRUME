@@ -1,88 +1,55 @@
-
-
-
-main#ensinoDeMusica{
-    margin: auto;
-    width: 80%;
-    height: 80vh;
-    text-align: justify;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.ensinoDeMusica__container{
-    display: flex;
-    gap: 30px;
-}
-
-.ensinoDeMusica__container div{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+#infraestrutura{
+    margin: 5rem;
     text-align: justify;
 }
-.ensinoDeMusica__container h2{
-    text-align: left;
-    width: 100%;
+#infraestrutura img{
+    width: 45%;
 }
-.ensinoDeMusica__container a{
+
+
+
+.destaque__img{
     display: flex;
-    justify-content: center;
-    color: var(--whitePiano);
-    padding: 1rem 2rem;
-    margin: 1rem;
-    text-decoration: none;
-    font-family: var(--fontFamilyTitle);
-    border: 1px solid var(--accent);
+    gap: 10px;
+    justify-content: space-evenly;
 }
 
-/* ---------------------- */
-
-
-.ensino{
-    width: 90%;
-    margin: auto;
+.infraestrutura__sec{
     display: flex;
-    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
 }
 
-.ensino__buttons{
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin: auto;
+.sec__contetn{
+    width: 45%;
 }
 
-.ensino__buttons button{
-    color: var(--whitePiano);
-    background: none;
-    outline: none;
-    padding: 1rem 2rem;
-    border: 1px solid var(--accent);
-    width: 100%;
-    text-transform: uppercase;
+#sec02__img{
+display: flex;
+margin: auto;
 }
+
+
 
 @media only screen and (max-width: 768px){
-    main#pesquisa{
-        margin-top: 5rem;
-    }
-    .ensino__buttons{
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
-        margin: auto;
-        margin-bottom: 1rem;
-    }
-    .ensino__buttons button{
-        width: 40%;
-        padding: 1rem 0rem;
-    }
-    .ensino__container{
+    #infraestrutura{
+        padding: 5rem 0;
         width: 90%;
         margin: auto;
     }
-
+    #infraestrutura img{
+        width: 80%;
+    }
+    
+    .destaque__img{
+        flex-direction: column;
+        align-items: center;
+    }
+    .infraestrutura__sec{
+        flex-direction: column;
+    }
+    .sec__contetn{
+        width: 100%;
+    }
 }

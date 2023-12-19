@@ -39,8 +39,14 @@
 
 @media only screen and (max-width: 768px) {
     #pesquisaIntro{
-        margin-top: 5rem;
+        padding: 5rem 0 0;
+        width: 90%;
+        margin: auto;
     }
+    #pesquisaIntro img{
+        display: none;
+    }
+
     .pesquisa__destaque{
         flex-direction: column-reverse;
     }
@@ -258,4 +264,8 @@
         width: 80%;
     }
 
+
+
 }
+
+

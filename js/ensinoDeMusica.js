@@ -14,7 +14,7 @@ function changeEnsino(categoria){
         activeButton(0) 
         document.getElementById("ensino__container").innerHTML = ""
         var container = `
-            <h2> arquivos da Disciplina </h2>
+            <h2> Arquivos da Disciplina </h2>
         `
         document.getElementById("ensino__container").innerHTML += container;
 
@@ -23,7 +23,7 @@ function changeEnsino(categoria){
         document.getElementById("ensino__container").innerHTML = ""
 
         var container = `
-            <h2> VIDEOS educacionais </h2>
+            <h2> Videos educacionais </h2>
         `
         document.getElementById("ensino__container").innerHTML += container;
     } else if(categoria ==2){
@@ -31,7 +31,7 @@ function changeEnsino(categoria){
         document.getElementById("ensino__container").innerHTML = ""
 
         var container = `
-            <h2> arquivos da Disciplina </h2>
+            <h2> Videos de Curiosidades </h2>
         `
         document.getElementById("ensino__container").innerHTML += container;
     }
